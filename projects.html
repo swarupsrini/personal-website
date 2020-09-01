@@ -16,7 +16,23 @@
 
     <!-- links, scripts -->
     <link rel="stylesheet" href="styles.css" />
-    <script defer src=""></script>
+    <link rel="stylesheet" href="gallery.css" />
+    <!-- splide -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        for (let i = 0; i < 6; i++) {
+          new Splide("#splide" + i, {
+            type: "loop",
+            autoplay: true,
+          }).mount();
+        }
+      });
+    </script>
 
     <!-- fonts -->
     <link
@@ -41,7 +57,302 @@
           </li>
         </ul>
       </div>
-      <div class="content content-projects"></div>
+      <div class="content content-projects">
+        <a
+          href="https://github.com/swarupsrini?tab=repositories"
+          target="_blank"
+        >
+          <div class="btn">View Projects</div>
+        </a>
+
+        <h2>
+          Virtual Queue Manager
+          <a
+            href="https://github.com/swarupsrini/virtual-queue-management"
+            target="_blank"
+            class="icon-svg space-horizontal"
+          >
+            <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m24.849322,0c-13.722941,0 -24.849322,11.481118 -24.849322,25.641581c0,11.330874 7.119331,20.940207 16.994412,24.330054c1.242175,0.234781 1.695675,-0.557153 1.695675,-1.23325c0,-0.61039 -0.022762,-2.632369 -0.034896,-4.77334c-6.910004,1.549362 -8.370581,-3.023653 -8.370581,-3.023653c-1.131421,-2.961052 -2.758857,-3.749831 -2.758857,-3.749831c-2.258328,-1.590078 0.171324,-1.558778 0.171324,-1.558778c2.49493,0.178389 3.80845,2.641784 3.80845,2.641784c2.217414,3.918855 5.817993,2.785767 7.231541,2.128452c0.225876,-1.65268 0.86895,-2.785767 1.57735,-3.424303c-5.516161,-0.647901 -11.318963,-2.848369 -11.318963,-12.673702c0,-2.801443 0.969172,-5.086348 2.555597,-6.881459c-0.253298,-0.651056 -1.108707,-3.259986 0.245678,-6.789109c0,0 2.083946,-0.688617 6.834146,2.629264c1.980763,-0.571226 4.105671,-0.852933 6.218397,-0.862348c2.111222,0.009415 4.237586,0.294227 6.221455,0.865453c4.741173,-3.320985 6.828128,-2.629264 6.828128,-2.629264c1.358947,3.532278 0.503538,6.138054 0.248736,6.786004c1.592492,1.795111 2.554093,4.080066 2.554093,6.881459c0,9.850373 -5.811926,12.019491 -11.347792,12.654921c0.894867,0.795039 1.686551,2.353817 1.686551,4.745195c0,3.427458 -0.033391,6.19129 -0.033391,7.03641c0,0.682357 0.451947,1.480501 1.710818,1.230095c9.867559,-3.396107 16.980774,-13.00544 16.980774,-24.330054c0,-14.160463 -11.126381,-25.641581 -24.849322,-25.641581z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://immense-basin-10375.herokuapp.com"
+            target="_blank"
+            class="icon-svg space-horizontal"
+          >
+            <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m43.833172,10.012387l-27.561108,27.561108a2.675836,2.675836 0 1 1 -3.74617,-3.799687l27.507591,-27.534349l-9.579492,0a2.675836,2.675836 0 0 1 0,-5.351671l16.055014,0a2.675836,2.675836 0 0 1 2.675836,2.675836l0,16.055014a2.675836,2.675836 0 0 1 -5.351671,0l0,-9.60625zm-5.351671,20.309593a2.675836,2.675836 0 0 1 5.351671,0l0,13.379178a5.351671,5.351671 0 0 1 -5.351671,5.351671l-32.110028,0a5.351671,5.351671 0 0 1 -5.351671,-5.351671l0,-32.110028c0,-2.943419 2.408252,-5.351671 5.351671,-5.351671l13.379178,0a2.675836,2.675836 0 0 1 0,5.351671l-13.379178,0l0,32.110028l32.110028,0l0,-13.379178z"
+              />
+            </svg>
+          </a>
+        </h2>
+        <p class="space-bottom">
+          A website to manage store queues with many powerful features including
+          intelligent store searching, store analytics tracking, real-time queue
+          status monitoring, QR code validation, etc.
+        </p>
+        <p class="font-sec space-bottom">
+          <strong>
+            <span class="color-fg">Technology:</span> MongoDB, Express, React,
+            Node.js
+          </strong>
+        </p>
+        <div id="splide0" class="splide gallery">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img
+                  src="assets/projects/virtual-queue-manager/login.png"
+                  style="width: 100%"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="assets/projects/virtual-queue-manager/store-search.png"
+                  style="width: 100%"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="assets/projects/virtual-queue-manager/store-analytics.png"
+                  style="width: 100%"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="assets/projects/virtual-queue-manager/settings.png"
+                  style="width: 100%"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="assets/projects/virtual-queue-manager/queue-status.png"
+                  style="width: 100%"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="assets/projects/virtual-queue-manager/queue-dashboard.png"
+                  style="width: 100%"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- TODO: update PermForm.js GitHub link -->
+        <h2>
+          PermForm.js
+          <a href="#" target="_blank" class="icon-svg space-horizontal">
+            <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m24.849322,0c-13.722941,0 -24.849322,11.481118 -24.849322,25.641581c0,11.330874 7.119331,20.940207 16.994412,24.330054c1.242175,0.234781 1.695675,-0.557153 1.695675,-1.23325c0,-0.61039 -0.022762,-2.632369 -0.034896,-4.77334c-6.910004,1.549362 -8.370581,-3.023653 -8.370581,-3.023653c-1.131421,-2.961052 -2.758857,-3.749831 -2.758857,-3.749831c-2.258328,-1.590078 0.171324,-1.558778 0.171324,-1.558778c2.49493,0.178389 3.80845,2.641784 3.80845,2.641784c2.217414,3.918855 5.817993,2.785767 7.231541,2.128452c0.225876,-1.65268 0.86895,-2.785767 1.57735,-3.424303c-5.516161,-0.647901 -11.318963,-2.848369 -11.318963,-12.673702c0,-2.801443 0.969172,-5.086348 2.555597,-6.881459c-0.253298,-0.651056 -1.108707,-3.259986 0.245678,-6.789109c0,0 2.083946,-0.688617 6.834146,2.629264c1.980763,-0.571226 4.105671,-0.852933 6.218397,-0.862348c2.111222,0.009415 4.237586,0.294227 6.221455,0.865453c4.741173,-3.320985 6.828128,-2.629264 6.828128,-2.629264c1.358947,3.532278 0.503538,6.138054 0.248736,6.786004c1.592492,1.795111 2.554093,4.080066 2.554093,6.881459c0,9.850373 -5.811926,12.019491 -11.347792,12.654921c0.894867,0.795039 1.686551,2.353817 1.686551,4.745195c0,3.427458 -0.033391,6.19129 -0.033391,7.03641c0,0.682357 0.451947,1.480501 1.710818,1.230095c9.867559,-3.396107 16.980774,-13.00544 16.980774,-24.330054c0,-14.160463 -11.126381,-25.641581 -24.849322,-25.641581z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://gentle-tor-17639.herokuapp.com/"
+            target="_blank"
+            class="icon-svg space-horizontal"
+          >
+            <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m43.833172,10.012387l-27.561108,27.561108a2.675836,2.675836 0 1 1 -3.74617,-3.799687l27.507591,-27.534349l-9.579492,0a2.675836,2.675836 0 0 1 0,-5.351671l16.055014,0a2.675836,2.675836 0 0 1 2.675836,2.675836l0,16.055014a2.675836,2.675836 0 0 1 -5.351671,0l0,-9.60625zm-5.351671,20.309593a2.675836,2.675836 0 0 1 5.351671,0l0,13.379178a5.351671,5.351671 0 0 1 -5.351671,5.351671l-32.110028,0a5.351671,5.351671 0 0 1 -5.351671,-5.351671l0,-32.110028c0,-2.943419 2.408252,-5.351671 5.351671,-5.351671l13.379178,0a2.675836,2.675836 0 0 1 0,5.351671l-13.379178,0l0,32.110028l32.110028,0l0,-13.379178z"
+              />
+            </svg>
+          </a>
+        </h2>
+        <p class="space-bottom">
+          A JavaScript library to build forms with simple JSON strings. Allows
+          for autosaving, draggability, and exporting/importing form
+          data/structure.
+        </p>
+        <p class="font-sec space-bottom">
+          <strong>
+            <span class="color-fg">Technology:</span> HTML, CSS, JavaScript,
+            Express
+          </strong>
+        </p>
+        <div id="splide1" class="splide gallery">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img
+                  src="assets/projects/permform/home.png"
+                  style="width: 100%"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="assets/projects/permform/examples.png"
+                  style="width: 100%"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <h2>
+          Mapfo
+          <a
+            href="https://github.com/swarupsrini/mapfo"
+            target="_blank"
+            class="icon-svg space-horizontal"
+          >
+            <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m24.849322,0c-13.722941,0 -24.849322,11.481118 -24.849322,25.641581c0,11.330874 7.119331,20.940207 16.994412,24.330054c1.242175,0.234781 1.695675,-0.557153 1.695675,-1.23325c0,-0.61039 -0.022762,-2.632369 -0.034896,-4.77334c-6.910004,1.549362 -8.370581,-3.023653 -8.370581,-3.023653c-1.131421,-2.961052 -2.758857,-3.749831 -2.758857,-3.749831c-2.258328,-1.590078 0.171324,-1.558778 0.171324,-1.558778c2.49493,0.178389 3.80845,2.641784 3.80845,2.641784c2.217414,3.918855 5.817993,2.785767 7.231541,2.128452c0.225876,-1.65268 0.86895,-2.785767 1.57735,-3.424303c-5.516161,-0.647901 -11.318963,-2.848369 -11.318963,-12.673702c0,-2.801443 0.969172,-5.086348 2.555597,-6.881459c-0.253298,-0.651056 -1.108707,-3.259986 0.245678,-6.789109c0,0 2.083946,-0.688617 6.834146,2.629264c1.980763,-0.571226 4.105671,-0.852933 6.218397,-0.862348c2.111222,0.009415 4.237586,0.294227 6.221455,0.865453c4.741173,-3.320985 6.828128,-2.629264 6.828128,-2.629264c1.358947,3.532278 0.503538,6.138054 0.248736,6.786004c1.592492,1.795111 2.554093,4.080066 2.554093,6.881459c0,9.850373 -5.811926,12.019491 -11.347792,12.654921c0.894867,0.795039 1.686551,2.353817 1.686551,4.745195c0,3.427458 -0.033391,6.19129 -0.033391,7.03641c0,0.682357 0.451947,1.480501 1.710818,1.230095c9.867559,-3.396107 16.980774,-13.00544 16.980774,-24.330054c0,-14.160463 -11.126381,-25.641581 -24.849322,-25.641581z"
+              />
+            </svg>
+          </a>
+        </h2>
+        <p class="space-bottom">
+          A mobile app providing offline access to essential resources such as
+          directions to local food banks and homeless shelters by using SMS
+          technology. Built for the Google Developer Student Club Solutions
+          Challenge 2020.
+        </p>
+        <p class="font-sec space-bottom">
+          <strong>
+            <span class="color-fg">Technology:</span> Flutter, Dart, Twilio,
+            Python
+          </strong>
+        </p>
+        <div>
+          <div>
+            <ul style="display: flex; list-style: none; padding: 0">
+              <li>
+                <img
+                  src="assets/projects/mapfo/home.png"
+                  style="height: 550px; margin-right: 10px"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="assets/projects/mapfo/maps.png"
+                  style="height: 550px; margin-right: 10px"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="assets/projects/mapfo/settings.png"
+                  style="height: 550px"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <h2>
+          Escape Room Game
+          <a
+            href="https://github.com/swarupsrini/unreal-engine-learning"
+            target="_blank"
+            class="icon-svg space-horizontal"
+          >
+            <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m24.849322,0c-13.722941,0 -24.849322,11.481118 -24.849322,25.641581c0,11.330874 7.119331,20.940207 16.994412,24.330054c1.242175,0.234781 1.695675,-0.557153 1.695675,-1.23325c0,-0.61039 -0.022762,-2.632369 -0.034896,-4.77334c-6.910004,1.549362 -8.370581,-3.023653 -8.370581,-3.023653c-1.131421,-2.961052 -2.758857,-3.749831 -2.758857,-3.749831c-2.258328,-1.590078 0.171324,-1.558778 0.171324,-1.558778c2.49493,0.178389 3.80845,2.641784 3.80845,2.641784c2.217414,3.918855 5.817993,2.785767 7.231541,2.128452c0.225876,-1.65268 0.86895,-2.785767 1.57735,-3.424303c-5.516161,-0.647901 -11.318963,-2.848369 -11.318963,-12.673702c0,-2.801443 0.969172,-5.086348 2.555597,-6.881459c-0.253298,-0.651056 -1.108707,-3.259986 0.245678,-6.789109c0,0 2.083946,-0.688617 6.834146,2.629264c1.980763,-0.571226 4.105671,-0.852933 6.218397,-0.862348c2.111222,0.009415 4.237586,0.294227 6.221455,0.865453c4.741173,-3.320985 6.828128,-2.629264 6.828128,-2.629264c1.358947,3.532278 0.503538,6.138054 0.248736,6.786004c1.592492,1.795111 2.554093,4.080066 2.554093,6.881459c0,9.850373 -5.811926,12.019491 -11.347792,12.654921c0.894867,0.795039 1.686551,2.353817 1.686551,4.745195c0,3.427458 -0.033391,6.19129 -0.033391,7.03641c0,0.682357 0.451947,1.480501 1.710818,1.230095c9.867559,-3.396107 16.980774,-13.00544 16.980774,-24.330054c0,-14.160463 -11.126381,-25.641581 -24.849322,-25.641581z"
+              />
+            </svg>
+          </a>
+        </h2>
+        <p class="space-bottom">
+          A JavaScript library to build forms with simple JSON strings. Allows
+          for autosaving, draggability, and exporting/importing form
+          data/structure.
+        </p>
+        <p class="font-sec space-bottom">
+          <strong>
+            <span class="color-fg">Technology:</span> Unreal Engine, C++
+          </strong>
+        </p>
+        <img class="gallery" src="assets/projects/escape-room/escaperoom.png" />
+
+        <h2>
+          Match My Style
+          <a
+            href="https://github.com/swarupsrini/match-my-style"
+            target="_blank"
+            class="icon-svg space-horizontal"
+          >
+            <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m24.849322,0c-13.722941,0 -24.849322,11.481118 -24.849322,25.641581c0,11.330874 7.119331,20.940207 16.994412,24.330054c1.242175,0.234781 1.695675,-0.557153 1.695675,-1.23325c0,-0.61039 -0.022762,-2.632369 -0.034896,-4.77334c-6.910004,1.549362 -8.370581,-3.023653 -8.370581,-3.023653c-1.131421,-2.961052 -2.758857,-3.749831 -2.758857,-3.749831c-2.258328,-1.590078 0.171324,-1.558778 0.171324,-1.558778c2.49493,0.178389 3.80845,2.641784 3.80845,2.641784c2.217414,3.918855 5.817993,2.785767 7.231541,2.128452c0.225876,-1.65268 0.86895,-2.785767 1.57735,-3.424303c-5.516161,-0.647901 -11.318963,-2.848369 -11.318963,-12.673702c0,-2.801443 0.969172,-5.086348 2.555597,-6.881459c-0.253298,-0.651056 -1.108707,-3.259986 0.245678,-6.789109c0,0 2.083946,-0.688617 6.834146,2.629264c1.980763,-0.571226 4.105671,-0.852933 6.218397,-0.862348c2.111222,0.009415 4.237586,0.294227 6.221455,0.865453c4.741173,-3.320985 6.828128,-2.629264 6.828128,-2.629264c1.358947,3.532278 0.503538,6.138054 0.248736,6.786004c1.592492,1.795111 2.554093,4.080066 2.554093,6.881459c0,9.850373 -5.811926,12.019491 -11.347792,12.654921c0.894867,0.795039 1.686551,2.353817 1.686551,4.745195c0,3.427458 -0.033391,6.19129 -0.033391,7.03641c0,0.682357 0.451947,1.480501 1.710818,1.230095c9.867559,-3.396107 16.980774,-13.00544 16.980774,-24.330054c0,-14.160463 -11.126381,-25.641581 -24.849322,-25.641581z"
+              />
+            </svg>
+          </a>
+        </h2>
+        <p class="space-bottom">
+          A website that uses clothes from your personal wardrobe to identify
+          your 'style' and intelligently filters brand catalogs by 'matching'
+          your style.
+        </p>
+        <p class="font-sec space-bottom">
+          <strong>
+            <span class="color-fg">Technology:</span> React, Firebase, Cloud
+            Firestore, Google Cloud Vision, Jupyter Notebook
+          </strong>
+        </p>
+        <div id="splide2" class="splide gallery">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img
+                  src="assets/projects/match-my-style/shirts.png"
+                  style="width: 100%"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="assets/projects/match-my-style/pants.png"
+                  style="width: 100%"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <h2>
+          J.O.S.H. Jump
+          <a
+            href="https://github.com/swarupsrini/J.O.S.H.-Jump"
+            target="_blank"
+            class="icon-svg space-horizontal"
+          >
+            <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m24.849322,0c-13.722941,0 -24.849322,11.481118 -24.849322,25.641581c0,11.330874 7.119331,20.940207 16.994412,24.330054c1.242175,0.234781 1.695675,-0.557153 1.695675,-1.23325c0,-0.61039 -0.022762,-2.632369 -0.034896,-4.77334c-6.910004,1.549362 -8.370581,-3.023653 -8.370581,-3.023653c-1.131421,-2.961052 -2.758857,-3.749831 -2.758857,-3.749831c-2.258328,-1.590078 0.171324,-1.558778 0.171324,-1.558778c2.49493,0.178389 3.80845,2.641784 3.80845,2.641784c2.217414,3.918855 5.817993,2.785767 7.231541,2.128452c0.225876,-1.65268 0.86895,-2.785767 1.57735,-3.424303c-5.516161,-0.647901 -11.318963,-2.848369 -11.318963,-12.673702c0,-2.801443 0.969172,-5.086348 2.555597,-6.881459c-0.253298,-0.651056 -1.108707,-3.259986 0.245678,-6.789109c0,0 2.083946,-0.688617 6.834146,2.629264c1.980763,-0.571226 4.105671,-0.852933 6.218397,-0.862348c2.111222,0.009415 4.237586,0.294227 6.221455,0.865453c4.741173,-3.320985 6.828128,-2.629264 6.828128,-2.629264c1.358947,3.532278 0.503538,6.138054 0.248736,6.786004c1.592492,1.795111 2.554093,4.080066 2.554093,6.881459c0,9.850373 -5.811926,12.019491 -11.347792,12.654921c0.894867,0.795039 1.686551,2.353817 1.686551,4.745195c0,3.427458 -0.033391,6.19129 -0.033391,7.03641c0,0.682357 0.451947,1.480501 1.710818,1.230095c9.867559,-3.396107 16.980774,-13.00544 16.980774,-24.330054c0,-14.160463 -11.126381,-25.641581 -24.849322,-25.641581z"
+              />
+            </svg>
+          </a>
+        </h2>
+        <p class="space-bottom">
+          A game inspired by Gravity Guy where the player interacts with a
+          pixelated environment by togging the direction of gravity. The
+          objective is to avoid obstacles and reach the end of the level as fast
+          as possible.
+        </p>
+        <p class="font-sec space-bottom">
+          <strong>
+            <span class="color-fg">Technology:</span> Altera DE2 Board, Verilog
+          </strong>
+        </p>
+        <iframe
+          width="850"
+          height="475"
+          src="https://www.youtube.com/embed/mXg3eTzyErs"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+
+        <!--  -->
+      </div>
     </div>
   </body>
 </html>
