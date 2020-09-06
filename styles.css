@@ -8,7 +8,7 @@
   --font-main: "Manrope", sans-serif;
   --font-sec: "Roboto Mono", monospace;
   --font-size-body: clamp(16px, 2vw, 20px);
-  --font-size-h1: clamp(16px, 11vw, 100px);
+  --font-size-h1: clamp(16px, 10vw, 100px);
   --font-size-h2: clamp(25px, 3.7vw, 35px);
   --font-size-home-body: clamp(16px, 2vw, 23px);
   --font-size-navbar: clamp(16px, 6vw, 25px);
