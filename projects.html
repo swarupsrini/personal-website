@@ -239,26 +239,17 @@
         </p>
         <div>
           <div>
-            <ul style="display: flex; list-style: none; padding: 0">
-              <li>
-                <img
-                  src="assets/projects/mapfo/home.png"
-                  style="height: 550px; margin-right: 10px"
-                />
-              </li>
-              <li class="splide__slide">
-                <img
-                  src="assets/projects/mapfo/maps.png"
-                  style="height: 550px; margin-right: 10px"
-                />
-              </li>
-              <li class="splide__slide">
-                <img
-                  src="assets/projects/mapfo/settings.png"
-                  style="height: 550px"
-                />
-              </li>
-            </ul>
+            <div class="mapfo-box gallery">
+              <img
+                src="assets/projects/mapfo/home.png"
+                class="mapfo-img mapfo-img-space"
+              />
+              <img
+                src="assets/projects/mapfo/maps.png"
+                class="mapfo-img mapfo-img-space"
+              />
+              <img src="assets/projects/mapfo/settings.png" class="mapfo-img" />
+            </div>
           </div>
         </div>
 
@@ -333,6 +324,52 @@
         </div>
 
         <h2>
+          Spotify API Clone
+          <a
+            href="https://github.com/swarupsrini/spotify-api-clone"
+            target="_blank"
+            class="icon-svg space-horizontal"
+          >
+            <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m24.849322,0c-13.722941,0 -24.849322,11.481118 -24.849322,25.641581c0,11.330874 7.119331,20.940207 16.994412,24.330054c1.242175,0.234781 1.695675,-0.557153 1.695675,-1.23325c0,-0.61039 -0.022762,-2.632369 -0.034896,-4.77334c-6.910004,1.549362 -8.370581,-3.023653 -8.370581,-3.023653c-1.131421,-2.961052 -2.758857,-3.749831 -2.758857,-3.749831c-2.258328,-1.590078 0.171324,-1.558778 0.171324,-1.558778c2.49493,0.178389 3.80845,2.641784 3.80845,2.641784c2.217414,3.918855 5.817993,2.785767 7.231541,2.128452c0.225876,-1.65268 0.86895,-2.785767 1.57735,-3.424303c-5.516161,-0.647901 -11.318963,-2.848369 -11.318963,-12.673702c0,-2.801443 0.969172,-5.086348 2.555597,-6.881459c-0.253298,-0.651056 -1.108707,-3.259986 0.245678,-6.789109c0,0 2.083946,-0.688617 6.834146,2.629264c1.980763,-0.571226 4.105671,-0.852933 6.218397,-0.862348c2.111222,0.009415 4.237586,0.294227 6.221455,0.865453c4.741173,-3.320985 6.828128,-2.629264 6.828128,-2.629264c1.358947,3.532278 0.503538,6.138054 0.248736,6.786004c1.592492,1.795111 2.554093,4.080066 2.554093,6.881459c0,9.850373 -5.811926,12.019491 -11.347792,12.654921c0.894867,0.795039 1.686551,2.353817 1.686551,4.745195c0,3.427458 -0.033391,6.19129 -0.033391,7.03641c0,0.682357 0.451947,1.480501 1.710818,1.230095c9.867559,-3.396107 16.980774,-13.00544 16.980774,-24.330054c0,-14.160463 -11.126381,-25.641581 -24.849322,-25.641581z"
+              />
+            </svg>
+          </a>
+        </h2>
+        <p class="space-bottom">
+          A REST API for a Spotify-like music application. Supports many
+          features such as creating/deleting profiles/songs, following/friending
+          other profiles, and adding songs to a playlist. Also supports querying
+          songs by properties. Uses microservices for extensibility. The images
+          show a preview of the two databases.
+        </p>
+        <p class="font-sec space-bottom">
+          <strong>
+            <span class="color-fg">Technology:</span> Java, Spring Boot,
+            MongoDB, Neo4j
+          </strong>
+        </p>
+        <div id="splide3" class="splide gallery">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img
+                  src="assets/projects/spotify-api-clone/mongo.jpg"
+                  style="width: 100%"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="assets/projects/spotify-api-clone/neo4j.jpg"
+                  style="width: 100%"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <h2>
           J.O.S.H. Jump
           <a
             href="https://github.com/swarupsrini/J.O.S.H.-Jump"
@@ -357,14 +394,19 @@
             <span class="color-fg">Technology:</span> Altera DE2 Board, Verilog
           </strong>
         </p>
-        <iframe
-          width="850"
-          height="475"
-          src="https://www.youtube.com/embed/mXg3eTzyErs"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <div class="gallery">
+          <div class="vid-box">
+            <iframe
+              class="vid-frame"
+              scrolling="no"
+              frameborder="0"
+              src="https://www.youtube.com/embed/mXg3eTzyErs"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
 
         <!--  -->
       </div>
