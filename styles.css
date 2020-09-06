@@ -11,7 +11,7 @@
   --font-size-h1: clamp(16px, 10vw, 100px);
   --font-size-h2: clamp(25px, 3.7vw, 35px);
   --font-size-home-body: clamp(16px, 2vw, 23px);
-  --font-size-navbar: 16px;
+  --font-size-navbar: clamp(16px, 3.5vw, 25px);
   --font-size-logo: clamp(30px, 9vw, 60px);
   --font-size-btn: clamp(16px, 3vw, 25px);
 }
@@ -104,17 +104,22 @@ a {
   align-items: center;
   font-family: var(--font-sec);
   list-style: none;
+  padding-inline-start: 20px;
 }
 
 .links > li {
   box-sizing: border-box;
+  height: 35px;
 }
 
 .links > li > a {
   color: inherit;
   text-decoration: none;
   margin: 5px;
-  padding: 10px 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   border-radius: 3px;
   box-sizing: border-box;
 }
